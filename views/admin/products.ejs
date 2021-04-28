@@ -19,7 +19,7 @@
                                     <img src="<%= product.image %>" alt="<%= product.title %>">
                                 </div>
                                 <div class="card__content">
-                                    <h2 class="product__price">$
+                                    <h2 class="product__price">Rs.
                                         <%= product.price %>
                                     </h2>
                                     <p class="product__description">
@@ -38,7 +38,7 @@
                             <% } %>
                     </div>
                     <% } else { %>
-                        <h1>No Products Found!</h1>
+                        <h1 style="margin-top: 80px;">No Products Found!</h1>
                         <% } %>
             </main>
             <%- include('../includes/end.ejs') %>

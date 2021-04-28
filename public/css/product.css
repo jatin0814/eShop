@@ -1,11 +1,24 @@
 .product-form {
-    width: 20rem;
+    padding: 22px;
+    margin-top: 150px;
+    width: 25rem;
     max-width: 90%;
     margin: auto;
     display: block;
+    box-shadow: 0 4px 8px 0 rgba(1,1,1,1);
+    transition: 0.3s;
+    height: 25rem;
 }
-
+.product-form input {
+    opacity: .8;
+    border-radius: 10px;
+}
+.product-form textarea{
+    opacity: .8;
+    border-radius: 10px;
+}
 .product-item {
+    padding: 22px;
     width: 20rem;
     max-width: 95%;
     margin: 1rem;

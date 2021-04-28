@@ -3,4 +3,30 @@
   max-width: 90%;
   margin: auto;
   display: block;
+  height: 15rem;
+}
+
+.login{
+  margin-top: 120px;
+  box-shadow: 0 4px 8px 0 rgba(1,1,1,1);
+  transition: 0.3s;
+  width: 30%;
+  
+}
+
+
+.signup{
+  margin-top: 120px;
+  box-shadow: 0 4px 8px 0 rgba(1,1,1,1);
+  transition: 0.3s;
+  width: 30%;
+  height: 30rem;
+}
+
+
+#email,#password,#username,#confirmPassword{
+  border-radius: 10px;
+  padding: 8px;
+  opacity: .7;
+  background-color: white;
 }

@@ -6,25 +6,25 @@
 <body>
    <%- include('../includes/navigation.ejs') %>
 
-    <main>
+    <main class="signup">
+        <h1 style="text-align: center;font-family: Monospace;font-size: 40px;">SignUp</h1>
         <form class="login-form" action="/signup" method="POST" novalidate>
             <div class="form-control">
-                <label for="email">Username</label>
-                <input type="text" name="username" id="username" value="<%= oldInput.uername%>">
+                <input type="text" name="username" id="username" value="<%= oldInput.uername%>" placeholder="username">
             </div>
             <div class="form-control">
-                <label for="email">E-Mail</label>
-                <input type="email" name="email" id="email" value="<%= oldInput.email%>">
+                <input type="email" name="email" id="email" value="<%= oldInput.email%>" placeholder="email">
             </div>
             <div class="form-control">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" value="<%= oldInput.password%>">
+                <input type="password" name="password" id="password" value="<%= oldInput.password%>" placeholder="password">
             </div>
             <div class="form-control">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" value="<%= oldInput.confirmPassword%>">
+                <input type="password" name="confirmPassword" id="confirmPassword" value="<%= oldInput.confirmPassword%>" placeholder="confirm password">
             </div>
-            <button class="btn" type="submit">SignUp</button>
+            <div style="text-align: center;margin-top: 42px;font-size: 20px;">
+                <button class="btn" type="submit">SignUp</button>
+            </div>
+            
         </form>
     </main>
 <%- include('../includes/end.ejs') %>

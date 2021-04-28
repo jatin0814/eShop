@@ -6,17 +6,18 @@
 <body>
    <%- include('../includes/navigation.ejs') %>
 
-    <main>
+    <main class="login">
+        <h1 style="text-align: center;font-family: Monospace;font-size: 40px;">LOGIN</h1>
         <form class="login-form" action="/login" method="POST">
             <div class="form-control">
-                <label for="email">E-Mail</label>
-                <input type="email" name="email" id="email" value="<%= oldInput.email%>">
+                <input type="email" name="email" id="email" value="<%= oldInput.email%>" placeholder="email">
             </div>
             <div class="form-control">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" value="<%= oldInput.password%>">
+                <input type="password" name="password" id="password" value="<%= oldInput.password%>" placeholder="password">
             </div>
-            <button class="btn" type="submit">Login</button>
+            <div style="text-align: center;margin-top: 42px;font-size: 20px;">
+                <button class="btn" type="submit">Login</button>
+            </div>
         </form>
         <!-- <div class="centered">
             <a class="reset" href="/reset">Reset Password</a>

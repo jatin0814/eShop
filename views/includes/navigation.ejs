@@ -5,7 +5,7 @@
         <ul class="main-header__item-list">
             <% if (!isLogedin) { %>
                 <li class="main-header__item">
-                    <h1 style="color: white">E-SHOP</h1>
+                    <h1 style="color: white">E-SHOP <img src="/images/cart.png" style="height: 30px;width: 30px;position: absolute;margin-left: 8px;margin-top: 3px;"></h1> 
                 </li>
             <% } %>
             <% if (isLogedin) { %>
@@ -34,7 +34,7 @@
                     <a class="<%= path === '/login' ? 'active' : '' %>" href="/">Login</a>
                 </li>
                 <li class="main-header__item">
-                    <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
+                    <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">SignUp</a>
                 </li>
             <% } else { %>
                 <li class="main-header__item">
